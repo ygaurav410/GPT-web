@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[App Name] Home</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+    <script defer src="scripts.js"></script> <!-- Link to the JavaScript file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="[CarbonX] Logo"> <!-- Replace with your logo image -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="emission.html">Emission Estimation</a></li>
+                    <li><a href="carbon-neutrality.html">Carbon Neutrality</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn" id="loginBtn">Login</button>
+                <button class="btn secondary" id="registerBtn">Register</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>WELCOME TO [APP NAME]</h1>
+            <p>A tool to help Indian coal mines achieve carbon neutrality through emission estimation and sustainable practices.</p>
+            <a href="get-started.html" class="btn">Get Started</a>
+            <a href="learn-more.html" class="btn secondary">Learn More</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [App Name]. All rights reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="loginClose">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" name="username" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" name="password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="registerClose">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="registerUsername">Username:</label>
+                <input type="text" id="registerUsername" name="username" required>
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="email" required>
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="password" required>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
